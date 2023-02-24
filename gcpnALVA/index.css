@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* NAVIGATION  */
+/* nav container flex */
+.main-nav{
+    display: flex;
+    /* border-bottom: 1px solid black; */
+    background-color: #ffeec1;
+    align-items: center;
+    padding: 7px;
+}
+
+#nav-logo {
+    list-style: none;
+    padding: 10px;
+    max-width: 20%;
+}
+
+.main-nav > div{
+    flex: 2;
+}
+
+/* Pag-ayos ng bullets layout sa list item sa nav bar */
+.main-nav > li{
+    list-style-type: none;
+
+}
+/* container ng nav links */
+.nav-links{
+    list-style-type: none;
+    font-size: 20px;
+    text-decoration: none; 
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 50px;
+    max-width: 60%;
+}
+/* individual squares for nav links */
+.nav-links li{
+    /* border: 1px solid green; */
+    padding: 15px;
+} 
+
+/* for navigation links - text */
+.main-nav li a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;   
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    list-style: none;
+    max-width: 15%;
+    width: fit-content;
+    height: fit-content;
+}
+.login-container a {
+    text-decoration: none;
+    margin-left: auto;
+    color: white;
+}
+.employee,.customer {
+    background-color: #9d0208;
+    border: 2px solid #9d0208;
+    padding: 5px;
+    margin-top: 3.5px;
+    margin-bottom: 3.5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.employee:hover,
+.customer:hover{
+    background-color: #e0292f;
+    border: 1px solid #e0292f;
+}
+/* underline as hover in nav links */
+a.middle {
+    position: relative;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a.middle:hover {
+    color: #c5080f;
+  }
+  
+  a.middle::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #c5080f;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  a.middle:hover::before {
+    transform: scaleX(1);
+  }
+  
+
+/* login box
+#login{
+    display: flex;
+    font-size: 18px;
+    list-style: none;
+    max-width: 20%;
+} 
+    
+
+ #login li {
+    padding: 15px;
+    font-weight: bold;
+    margin-left: auto;
+    background-color: #9d0208;
+    border: 2px solid #9d0208;
+    width:fit-content;
+    height:fit-content;
+}
+#login li a {
+    color: white;
+}
+#login li:hover {
+    background-color: #e0292f;
+    border: 1px solid #e0292f;
+}  */ 
+
+
+
+/* MAIN-TITLE */
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid orange; */
+    margin: 20px;
+    padding: 15px;
+    line-height: 1.3;
+}
+.main-header h1{
+    font-size: 40px;
+    word-wrap: break-word;
+    color: #941B0C;
+}
+.main-header h3{
+    font-size: 30px;
+    word-wrap: break-word;
+    font-weight: lighter;
+    color: #701407;
+    
+}
+
+/* ABOUT US */
+.header {
+    display: flex;
+}
+.header1 {
+    border: 2.5px solid #CA6702;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 25px;
+    font-size: 20px;
+    max-width: 50%;
+    line-height: 1.8;
+}
+.header2 {
+    max-width: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.header2 img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* REGISTER TO BOOK AN APPOINTMENT (in header) */
+.register {
+    display: flex;
+    border: 2px solid #CA6702;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    margin-left: 25px;
+    margin-top: 18px;
+}
+.register:hover {
+    border: 1px solid #f8922c;
+}
+.register a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 15px;
+    background-color: #CA6702;
+    color: white;
+}
+.register a:hover{
+    background-color: #f8922c;
+    
+}
+
+/* REVIEWS */
+.titles {
+    display: flex;
+    background-color: #ffa141;
+    margin: 100px 25px 50px 25px;
+    justify-content: center;
+   padding: 10px; 
+}
+.titles h1 {
+    font-size: 32px;
+    
+}
+
+/* REVIEWS-slider */
+.slider-container {
+    margin: 50px 25px;
+    /* border: 2px solid red;
+    max-height: 1000px; */
+}
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	float: left;
+	width: 20%;
+}
+
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+
+/* SERVICES */
+/* .titles h1 span  */
+#special-txt{
+    color: white;
+    font-weight: bold;
+} 
+/* services-top */
+.services-top {
+    display: flex;
+    /* border: 2px solid violet; */
+    margin: 50px 7% 50px 7%;
+    gap:70px;
+}
+.services-top > div {
+    border: 1px solid #efcb1adb;
+    padding: 15px;
+    background-color: #efcb1adb;
+
+}
+.student,.tourist,.partner,.guardian,.business{
+    justify-content: space-evenly;
+    text-align: center;
+    text-justify: inter-word;
+}
+.student > h3,
+.tourist > h3,
+.partner > h3,
+.guardian > h3,
+.business > h3 {
+    font-size: 26px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.services-desc {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.branch-btn{
+    border: 1px solid red;
+    background-color: #FFBA08;
+    padding: 12px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.branch-btn a{
+    text-decoration: none;
+    color: black;
+}
+.branch-btn:hover {
+    background-color: #faea59 ;
+}
+/* icon div */
+.icon {
+    margin: auto;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 50%;
+    width:fit-content;
+    height:fit-content;
+    justify-content: center;
+}
+
+/* services-bottom */
+.services-bottom {
+    display: flex;
+    /* border: 2px solid violet; */
+    margin: 50px 8% 50px 8%;
+    gap:70px;
+    justify-content: center;
+}
+.services-bottom > div {
+    border: 1px solid #efcb1adb;
+    background-color: #efcb1adb;
+    max-width: 30%;
+    padding: 15px;
+}
+ .services-bottom > div:hover,
+ .services-top > div:hover {
+    border: 3.25px solid #ff9d47;
+    background-color: #FEC89A;
+    
+} 
+
+/* BRANCHES */
+.branches-top{
+    display: flex;
+    /* border: 2px solid violet; */
+    margin: 50px 2.5% 50px 2.5%;
+    gap:30px; 
+    
+    
+}
+.branches-top > div {
+    border: 2.5px solid #ee4043;
+    background-color: #660708;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+}
+.cdo,
+.makati,
+.rizal,
+.cebu,
+.pampanga,
+.batangas {
+    text-align: center;
+    text-justify: inter-word;
+    justify-content: center;
+    min-width: 30%;
+    max-width: 40%;
+    
+}
+.cdo > h3,
+.makati > h3,
+.rizal > h3,
+.cebu > h3,
+.pampanga > h3,
+.batangas > h3 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+ .icon1 {
+    text-align: start;
+    margin: 12px;
+}
+.icon1 span{
+    font-weight: 500;
+    line-height: 1.5;
+
+} 
+
+.branches-img img{
+    width:100%;
+    min-height: 300px;
+    max-height: 310px;
+}

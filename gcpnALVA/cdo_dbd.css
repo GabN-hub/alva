@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.container {
+    display: flex;
+    padding: 15px;
+    background-color: #ffeec1;
+}
+.container a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.home {
+    justify-content: flex-start;
+    max-width: fit-content;
+    padding: 10px;
+    background-color: #9d0208;
+    border: 2px solid #9d0208;
+}
+.approve {
+    justify-content: space-between;
+    margin-left: 2%;
+    width: fit-content;
+    padding: 10px;
+    background-color: #9d0208;
+    border: 2px solid #9d0208;
+}
+.logout {
+    margin-left: auto;
+    max-width: fit-content;
+    padding: 10px;
+    background-color: #9d0208;
+    border: 2px solid #9d0208;
+}
+.nav-links {
+    list-style-type: none;
+    justify-content: center;
+    display: inline-flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* margin-left: auto; */
+}
+.nav-links > li {
+    margin-right: 10px;
+    margin-left:10px;
+    padding: 10px;
+}
+
+a.middle {
+    position: relative;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a.middle:hover {
+    color: #c5080f;
+  }
+  
+  a.middle::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #c5080f;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  a.middle:hover::before {
+    transform: scaleX(1);
+  }
+
+.home:hover,
+.logout:hover,
+.approve:hover {
+    background-color: #e0292f;
+    border: 1px solid #e0292f;
+}
+
+.header {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #941B0C;
+    font-size: 28px;
+    text-align: center;
+}
+.search {
+    margin-left: 30px;
+}
+
+.search > input{
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: auto;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.search input:invalid:not(:focus),
+.search-btn {
+	cursor: pointer;
+}
+.search-btn{
+    font-weight: bold;
+    background-color: #f8922c;
+    color: white;
+}
+.search-btn:hover{
+    background-color: #fabb7c;
+}
+table {
+    margin-top:30px;
+}
+.center {
+    margin-left:auto;
+    margin-right:auto
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+th {
+    background-color: pink;
+}
